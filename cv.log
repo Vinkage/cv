@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.1.26)  17 MAR 2021 18:17
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.1.26)  17 MAR 2021 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -670,97 +670,69 @@ contour: Using 16 copies for `\textbf {Data Mining}' on input line 213.
 ! Undefined control sequence.
 \enit@enditemize ->\enit@after 
                                \endlist \ifx \enit@series \relax \else \ifnu...
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
 ? 
 ! Undefined control sequence.
 \enit@enditemize ...x \else \ifnum \enit@resuming 
                                                   =\@ne \enit@setresumekeys ...
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
-? R
-OK, entering \nonstopmode...
+? 
 ! Undefined control sequence.
 \enit@setresumekeys ...xpandafter {\enit@savekeys 
                                                   }\xdef \enit@afterlist {#2...
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 \enit@setresumekeys ...it@toks }\ifnum \enit@type 
                                                   =\z@ #3\def \enit@noexcs {...
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
+? 
 ! Undefined control sequence.
 <argument> enit@resume@series@\enit@series 
                                            
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 \enit@setresumekeys ...me@#1}{\csname c@\@listctr 
                                                   \endcsname \the \csname c@...
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 \enit@setresumekeys ...e \the \csname c@\@listctr 
                                                   \endcsname }\fi }
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? R
+OK, entering \nonstopmode...
 ! You can't use `\relax' after \the.
 <recently read> \c@ 
                     
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
 I'm forgetting what you said and using zero instead.
 
 ! Undefined control sequence.
 \enit@enditemize ...ist \fi \ifnum \enit@resuming 
                                                   =\thr@@ \enit@setresumekey...
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -771,7 +743,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -780,7 +752,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Undefined control sequence.
 \enit@setresumekeys ...xpandafter {\enit@savekeys 
                                                   }\xdef \enit@afterlist {#2...
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -791,7 +763,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \enit@setresumekeys ...it@toks }\ifnum \enit@type 
                                                   =\z@ #3\def \enit@noexcs {...
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -802,7 +774,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -811,7 +783,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Undefined control sequence.
 \enit@setresumekeys ...me@#1}{\csname c@\@listctr 
                                                   \endcsname \the \csname c@...
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -822,7 +794,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \enit@setresumekeys ...e \the \csname c@\@listctr 
                                                   \endcsname }\fi }
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -833,7 +805,7 @@ and I'll forget about whatever was undefined.
 ! You can't use `\relax' after \the.
 <recently read> \c@ 
                     
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
 I'm forgetting what you said and using zero instead.
 
@@ -844,7 +816,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -853,7 +825,7 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.351     \resumeSubHeadingListEnd
+l.352     \resumeSubHeadingListEnd
                                   
 Things are pretty mixed up, but I think the worst is over.
 
@@ -881,6 +853,6 @@ Here is how much of TeX's memory you used:
  34572 multiletter control sequences out of 15000+600000
  407389 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 81i,11n,89p,249b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,12n,89p,249b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on cv.pdf (2 pages).
