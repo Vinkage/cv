@@ -1,0 +1,384 @@
+%-------------------------
+% Resume in Latex
+% Based off of: https://github.com/sb2nov/resume
+% and Jake Gutierrez's version of it
+% at https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+% inspired by https://practicaltypography.com/resumes.html
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[margin = 1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+
+%--------------UNDERLINING---------------
+% taken from https://alexwlchan.net/2017/10/latex-underlines/
+
+\usepackage{contour}
+\usepackage{ulem}
+
+\renewcommand{\ULdepth}{3.8pt}
+\contourlength{0.8pt}
+
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+%----------------------------------------
+
+\graphicspath{ {./Images/} }
+
+%----------FONT OPTIONS----------
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+
+% I could have just used the charter package here for the font I wanted...
+% but I'd still need to change compiler to XeLaTeX to include the title font
+% \usepackage{charter}
+
+\setmainfont{XCharter}
+
+\newfontfamily{\basictitle}{basictitlefont}[
+Path = Fonts/,
+Extension = .ttf,
+UprightFont = basictitlefont
+]
+% to use:
+% {\basictitle This text uses the basictitle font}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\iffalse
+% \iftrue
+\addtolength{\oddsidemargin}{0.3in}
+\addtolength{\marginparsep}{0.3in}
+\addtolength{\evensidemargin}{0.3in}
+\addtolength{\textwidth}{-0.5in}
+\addtolength{\topmargin}{0.3in}
+\addtolength{\textheight}{0.3in}
+\fi
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    {\color{gray}\titlerule} \vspace{-5pt}
+    \vspace{8pt}\scshape\raggedright\normalfont
+}{}{0pt}{}
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% ----- TOGGLE PHOTO --------
+% comment out \iffalse and remove the % from \iftrue to toggle photo
+\iffalse
+% \iftrue
+\begin{wrapfigure}{R}{0.15\textwidth}
+\vspace{-35pt}
+\includegraphics[scale=0.20]{dp_cropped}
+\end{wrapfigure}
+\fi
+
+%----------HEADING----------
+
+{\basictitle \Huge Mike Vink}
+\\
+
+% ----- TOGGLE FOR PHOTO ----
+% \vspace{10pt}
+
+\href{mailto:mike1994vink@gmail.com}{
+    \faEnvelope
+    \thinspace \thinspace
+    \myuline{mike1994vink@gmail.com}} $|$
+\href{https://www.linkedin.com/in/mike-vink-7a17a2139/}{
+    \faLinkedin
+    \thinspace \thinspace
+    \myuline{mike-vink}} $|$
+\href{https://github.com/Vinkage}{
+    \faGithub
+    \thinspace \thinspace
+    \myuline{Vinkage}} $|$
+\faPhone
+\thinspace \thinspace
++31 6 409 706 34
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Utrecht University}{Utrecht}
+      {Molecular and Cellular Life sciences, MSc.}{sept. 2019 -- May 2021}
+      \resumeItemListStart
+
+        \resumeItem{Specialisation: Biophysics and molecular imaging, 7.8/10}
+        \resumeItem{Minor: Applied data science, 8.6/10}
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Utrecht University}{Utrecht}
+      {Molecular life sciences, BSc.}{sept. 2014 -- May 2018}
+      \resumeItemListStart
+
+        \resumeItem{Thesis title (awarded 7.8/10): "Setting up biochemical tools to study C1."}
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+    %-----------PROJECTS-----------
+\section{Coding Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/Vinkage/pr_project}{\myuline{\textbf{Comparative study of state-of-the-art GANs}}} $|$ \textit{Python, Google Cloud Platform}}{ Dec '20 -- Feb 2021 }
+          \resumeItemListStart
+            \resumeItem{Part of Computer Science course (overall result: 8.6/10): \href{http://www.cs.uu.nl/docs/vakken/mpr/}{\myuline{\textbf{Pattern Recognition}}}}
+            \resumeItem{Set up instances and environment: Github > Google Cloud VM instances  > GPU-enabled network training}
+            \resumeItem{Set up github repository for team}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/Vinkage/2020_data_mining_classification_tree}{\myuline{\textbf{Implementing a classification tree}}} $|$ \textit{Python}}{  Sep -- Okt 2020 }
+          \resumeItemListStart
+            \resumeItem{Part of Computer Science course (overall result: 10/10): \href{http://www.cs.uu.nl/docs/vakken/mdm/}{\myuline{\textbf{Data Mining}}}}
+            \resumeItem{Set up github repository for team}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Research Intern}{Nov 2019 -- Nov 2020}
+      {Crystal and structural chemistry, Bert Janssen group}{Utrecht, Netherlands}
+      \resumeItemListStart
+        \resumeItem{Major Project}
+        \resumeItem{Research on protein structure using crystallization techniques}
+        \resumeItem{Aim to answer fundamental questions: What is the protein structure and chemistry underlying neuronal protein interactions?}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Intern}{Feb -- May 2018}
+      {Crystal and structural chemistry, Piet Gros group}{Utrecht, Netherlands}
+      \resumeItemListStart
+        \resumeItem{Bachelor end project}
+        \resumeItem{Used biochemical assays to help post-doc researcher start project}
+      \resumeItemListEnd
+
+%       \iffalse
+%       % \iftrue
+% % -----------Multiple Positions Heading-----------
+%     \resumeSubSubheading
+%      {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%         \resumeItem{Apache Beam}
+%           {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%      \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+% %-------------------------------------------
+%
+%     \fi
+
+%       \iffalse
+%       % \iftrue
+%     \resumeSubheading
+%       {Consultant}{Feb 2017}
+%       {National Environment Agency}{Singapore}
+%       \resumeItemListStart
+%         \resumeItem{Reviewed 4 candidate topics for R\&D funding: found current research grants and current environment technology}
+%       \resumeItemListEnd
+%
+%     \resumeSubheading
+%       {Innovation Consultant}{Dec 2016}
+%       {Land Transport Authority}{Singapore}
+%       \resumeItemListStart
+%         \resumeItem{Proposed folding seat solution increases train capacity by 13\%}
+%         \resumeItem{Achieved best presentation award (out of 9 pairs of people)}
+%       \resumeItemListEnd
+% \fi
+%
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH-----------
+% \section{Research (papers linked)}
+%   \resumeSubHeadingListStart
+%
+%     \resumeSubheading
+%       {\href{https://drive.google.com/open?id=1mmfRboc6VkFRZTedy0Wzz4gklM4_84w3}{\myuline{Rechargeable aqueous zinc batteries}}}{Aug 2018 -- Jun 2019}
+%       {with Prof Srinivasian Madhavi}{NTU, Singapore}
+%       \resumeItemListStart
+%         \resumeItem{Synthesised electrolytes, ran CVs \& three-electrode tests}
+%         \resumeItem{Published results in URECA (undergrad research) proceedings}
+%       \resumeItemListEnd
+%
+%     \resumeSubheading
+%       {\href{https://drive.google.com/open?id=1U78X1NCEEXN3O1o8Wnd_czyM6F7XEFJh}{\myuline{Lithium ion battery anodes}}}{Dec 2017 -- May 2018}
+%       {with Prof Srinivasian Madhavi}{NTU, Singapore}
+%       \resumeItemListStart
+%         \resumeItem{Synthesised battery slurries}
+%         \resumeItem{Learned various techniques: XRD analysis, cyclic voltammetry, thermogravimetric analysis, hydrothermal synthesis, data analysis}
+%         \resumeItem{Published paper in ChemElectroChem (third author)}
+%         \begin{itemize}
+%             \item DOI: 10.1002/celc.201801244
+%         \end{itemize}
+%       \resumeItemListEnd
+%
+%     \resumeSubheading
+%       {Dye-sensitised Solar Cells}{Apr -- Jul 2017}
+%       {with Associate Prof Soo Han Sen}{NTU, Singapore}
+%       \resumeItemListStart
+%         \resumeItem{Tested 4 experiment variables and conditions}
+%         \resumeItem{Increased scale of synthesis by 20\%}
+%       \resumeItemListEnd
+%
+%   \resumeSubHeadingListEnd
+
+%-----------CCAs-----------
+\section{Extracurriculars}
+    \resumeSubHeadingListStart
+
+      \resumeSubheading
+      {International buddy}{Nov 2020 -- Jan 2021}
+      {Life science student association}{}
+      \resumeItemListStart
+        \resumeItem{Met up and welcomed new international students.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Self studying}{Sept 2019-- Present}
+      {Free time during masters}{}
+      \resumeItemListStart
+        \resumeItem{Finished most exercises in "The chemistry math book."}
+        \resumeItem{Finished the exercises and more of \href{http://www.cs.uu.nl/docs/vakken/b1li/exercises.html}{"Logica voor informatica."}}
+        \resumeItem{Filling in the gaps of programming theory with \href{https://cs61a.org/}{"cs61a, Berkeley course based on: structure and interpretation computer programs."}}
+      \resumeItemListEnd
+
+
+      % \resumeSubheading
+      %     {Operations}{Jul 2018 -- Present}
+      %     {Effective Altruism Singapore}{}
+      %     \resumeItemListStart
+      %       \resumeItem{Set up scalable Eventbrite ticketing platform with Zapier integration}
+      %       \resumeItem{Facilitate inaugural Arete Fellowship in Singapore for Asia}
+      %     \resumeItemListEnd
+
+      % \resumeSubheading
+      % {External Liaison Director}{Aug 2018 -- May 2019}
+      % {Earthlink NTU}{}
+      % \resumeItemListStart
+      %   \resumeItem{Lead a team of 3 to organise 3 events and run 3 booths, with total turnout of 450 across the 6}
+      % \resumeItemListEnd
+
+      % \resumeSubheading
+      % {Assistant Head}{Jul 2018 -- Jul 2019}
+      % {ASEAN Youth Organization}{}
+      % \resumeItemListStart
+      %   \resumeItem{Organised the ASEAN Youth Conference for roughly 100 ASEAN participants in an international team of 17}
+      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, R} \\ % C/C++, SQL, JavaScript, HTML/CSS, R} \\
+     \textbf{Human Languages}{: Dutch, English} \\
+     \textbf{Developer Tools}{: Neovim, Tmux, Ssh, Git, Jupyter Notebooks, Rstudio, Google Cloud Platform} \\
+         % \textbf{Blog}{: \href{adventgineering.wordpress.com}{\myuline{adventgineering}},
+         % \href{sustainabam.wordpress.com}{\myuline{sustainabam}}
+         % }
+     }
+     }
+ \end{itemize}
+
+
+%
+\iffalse
+% \iftrue
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, SQL, JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: WordPress} \\
+     \textbf{Developer Tools}{: Jupyter Notebooks, Git, Google Cloud Platform, VS Code, Amazon AWS} \\
+     \textbf{Libraries}{: pandas, plotly}
+    }}
+ \end{itemize}
+\fi
+
+%-------------------------------------------
+\end{document}
